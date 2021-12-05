@@ -2,6 +2,7 @@
 <html>
     <head>
         <title> HTML5/CSS Grid Responsive </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             * {margin:0;}
             .grid-container {
@@ -14,7 +15,8 @@
                 grid-template-columns: 120px 1fr;
                 grid-template-rows: auto 1fr auto;
             }
-            .grid-container > div {padding: 5px; color: #FFF; font-size: 12px;}
+            a {color:#FFF; font-size: 14px;}
+            .grid-container > div {padding: 10px; color: #FFF; font-size: 12px;}
             .header {grid-area: header; background-color: #333;}
             .sidenav {grid-area: sidenav; background-color: #444; text-align: center; height:100%; overflow:auto;}
             .section {grid-area: section; background-color: #555; height:100%; overflow:auto;}
@@ -25,10 +27,11 @@
         <div class="grid-container">
             <div class="header">ItsAPanel</div>
             <div class="sidenav">
-                <p>.</p><br><p>.</p><br><p>.</p><br><p>.</p><br>
-                <p>.</p><br><p>.</p><br><p>.</p><br><p>.</p><br>
-                <p>.</p><br><p>.</p><br><p>.</p><br><p>.</p><br>
-                <p>.</p><br><p>.</p><br><p>.</p><br><p>.</p><br>
+                <a href="#">link</a><br><a href="#">link</a><br><a href="#">link</a><br><a href="#">link</a><br><a href="#">link</a><br>
+                <a href="#">link</a><br><a href="#">link</a><br><a href="#">link</a><br><a href="#">link</a><br><a href="#">link</a><br>
+                <a href="#">link</a><br><a href="#">link</a><br><a href="#">link</a><br><a href="#">link</a><br><a href="#">link</a><br>
+                <a href="#">link</a><br><a href="#">link</a><br><a href="#">link</a><br><a href="#">link</a><br><a href="#">link</a><br>
+                
             </div> 
             <div class="section">
                 <p>.</p><br><p>.</p><br><p>.</p><br><p>.</p><br>

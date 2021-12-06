@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> HTML5/CSS Grid Responsive </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {margin:0; color: #FFF;}
+            .grid-container {
+                width:100vw; height:100vh; grid-gap: 0px; padding: 0px;
+                display: grid;
+                grid-template-areas:
+                    'header header'
+                    'sidenav section'
+                    'footer footer';
+                grid-template-columns: 120px 1fr;
+                grid-template-rows: auto 1fr auto;
+            }
+            a {color:#FFF;}
+            a:hover {color:#EEE;}
+            .grid-container > div {font-size: 12px;}
+            .header {grid-area: header; background-color: #333;}
+            .sidenav {grid-area: sidenav; background-color: #444; text-align: center; height:100%; overflow:auto;}
+            .section {grid-area: section; background-color: #555; height:100%; overflow:auto;}
+            .footer {grid-area: footer; background-color: #333;}
+        </style>
+    </head>
+    
+    <body>
+        <!-- Container -->
+        <div class="grid-container">
+            <!-- Header -->
+            <div class="header">
+                <div style="margin:10px;">
+                    <a href="index.html">ItsAPanel</a> | <a href="index.html">Virtual Machines</a> | <a href="index.html">Containers</a> | <a href="index.html">Servers</a>
+                </div>
+            </div>
+            <!-- SideNav -->
+            <div class="sidenav">
+                <div style="margin:10px;">
+                    <p><a href="#main"><h3>link</h3></a><a href="#link1">link</a><br><a href="#link2">link</a><br><a href="#link3">link</a><br><a href="#link4">link</a><br></p><br>
+                </div>
+            </div>
+            <!-- Section -->
+            <div class="section">
+                <div style="margin:10px;">
+                    <h1 id="main"> DashBoard </h1>
+                    <br>
+                    <h2 id="link1">Host Information</h2>
+                    <br>
+                    <p>
+                        Hostname : BarkBox<br>
+                        IP Address : 127.0.0.1<br>
+                        Operating System : Debian<br>
+                        Processor : AMD A4-9125 RADEON R3<br>
+                        Max Frequency : 2.3GHZ<br>
+                        Cores : 2<br>
+                        Threads : 2<br>
+                        Memory : 4GB<br>
+                        Storage: 256gb
+                    </p>    
+                    <br>
+                    <h2 id="link2">Virtual Machine Information</h2>
+                    <br>
+                    <p>
+                        Hypervisors Installed: Xen<br>
+                        No Current Running Virtual Machines
+                    </p>    
+                    <br>
+                    <h2 id="link3">Container Information</h2>
+                    <br>
+                    <p>
+                        Container Services Installed : Docker<br>
+                        No Current Running Containers
+                    </p>    
+                    <br>
+                    <h2 id="link4">Server Information</h2>
+                    <br>
+                    <p>
+                        Hardware:<br>
+                        BarkBox 127.0.0.1:80<br><br>
+                        Virtual Machines:<br>
+                        Containers:<br>
+                    </p>
+                </div>
+            </div>
+            <!-- Footer -->  
+            <div class="footer">
+                <div style="margin:10px;">
+                    Made by <a href="https://github.com/sheepdog91">SheepDog</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
